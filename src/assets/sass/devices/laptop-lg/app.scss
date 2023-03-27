@@ -1,0 +1,12 @@
+@media screen and (max-width: 1700px) {
+
+    .app-cover-flex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        .app-cover-item {
+            width: 100%;
+        }
+    }
+}

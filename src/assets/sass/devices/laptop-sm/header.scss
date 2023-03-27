@@ -1,0 +1,77 @@
+@media screen and (max-width: 1200px) {
+
+    .product-header-cover-flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+        .product-header-cover-item {
+            width: 50%;
+            padding: 15px;
+            padding-bottom: 10px;
+            padding-top: 15px;
+            border-bottom: 1px solid lightgrey;
+            background-color: #e04f4f;
+    
+            &:first-child {
+    
+                .product-header-txt {
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin-block-end: 0.5em;
+                    margin-block-start: 0.5em;
+                    color: #fff;
+                }
+            }
+            &:last-child {
+                display: flex;
+                justify-content: flex-end;
+    
+                .action-cover-flex {
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .action-cover-item {
+    
+                        &:first-child {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+    
+                            .action-type-select {
+                                width: 90%;
+                                height: 35px;
+                                border: none;
+                                padding-left: 5px;
+                                border-radius: 5px;
+                                background-color: #fff;
+                            }
+                        }
+                        &:last-child {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+    
+                            .action-type-btn {
+                                width: 80%;
+                                height: 35px;
+                                border: 1px solid lightgrey;
+                                border-radius: 5px;
+                                color: #e04f4f;
+                                background-color: #fff;
+                                transition: 0.2s ease-in-out;
+    
+                                &:hover {
+                                    background-color: rgb(255, 255, 255);
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

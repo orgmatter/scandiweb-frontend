@@ -1,0 +1,259 @@
+@media screen and (max-width: 750px) {
+
+    .product-add-cover-flex {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        .product-add-cover-item {
+            width: 100%;
+    
+            .product-add-comp-cover-flex {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+    
+                .product-add-comp-cover-item {
+                    width: 100%;
+    
+                    @import url(./header.scss);
+                    
+                    .product-add-content-cover-flex {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+    
+                        .product-add-content-cover-item {
+                            width: 100% !important;
+                            padding: 20px;
+                            padding-left: 10px !important;
+                            padding-right: 10px !important;
+    
+                            .product-add-form-cover-flex {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+    
+                                .product-add-form-cover-item {
+                                    width: 90%;
+                                    padding: 40px;
+                                    border-radius: 10px;
+                                    background-color: #e04f4f;
+    
+                                    .form-cover {
+                                        width: 100%;
+    
+                                        .form-field-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+    
+                                            .form-field-cover-item {
+                                                width: 100% !important;
+    
+                                                .input-field-content-cover-flex {
+                                                    width: 100%;
+                                                    display: flex;
+                                                    justify-content: center;
+    
+                                                    .input-field-content-cover-item {
+                                                        width: 100%;
+    
+                                                        .input-cover {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: space-between;
+                                                            padding-bottom: 10px;
+                                                            align-items: center;
+    
+                                                            label {
+                                                                font-size: 1rem !important;
+                                                                color: #fff;
+                                                            }
+                                                            .product-add-input {
+                                                                height: 30px;
+                                                                border: none;
+                                                                border-radius: 5px;
+                                                                padding-left: 10px;
+                                                                width: 80%;
+                                                            }
+                                                        }
+                                                        .validation-feedback-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            padding-top: 0px;
+
+                                                            .validation-feedback-cover-item {
+                                                                width: 80%;
+                                                                margin-left: 20%;
+                                                                border-radius: 5px;
+                                                                background-color: #fff;
+
+                                                                .validation-feedback-text {
+                                                                    font-size: 0.7rem;
+                                                                    font-weight: 600;
+                                                                    color: #e04f4f;
+                                                                    text-align: center;
+                                                                    margin-block-start: 0.5em;
+                                                                    margin-block-end: 0.5em;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .product-type-fields-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+    
+                                            .product-type-fields-cover-item {
+                                                width: 100% !important;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                padding-top: 10px;
+                                                align-items: center;
+    
+                                                label {
+                                                    font-size: 0.6rem !important;
+                                                    color: #fff;
+                                                    visibility: hidden;
+                                                }
+    
+                                                .product-add-select {
+                                                    height: 35px;
+                                                    border: none;
+                                                    border-radius: 5px;
+                                                    padding-left: 10px;
+                                                    width: 90%;
+                                                }
+                                            }
+                                        }
+                                        .product-attribute-fields-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+    
+                                            .product-attribute-fields-cover-item {
+                                                width: 100% !important;
+    
+                                                .attr-type-form-cover-flex {
+                                                    width: 100%;
+                                                    display: flex;
+                                                    justify-content: center;
+    
+                                                    .attr-type-form-cover-item {
+                                                        width: 100%;
+    
+                                                        .attr-type-input-cover-item {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: space-between;
+                                                            padding-top: 20px;
+                                                            align-items: center;
+    
+                                                            label {
+                                                                font-size: 1rem !important;
+                                                                color: #fff;
+                                                            }
+    
+                                                            .product-attr-input {
+                                                                height: 30px;
+                                                                border: none;
+                                                                border-radius: 5px;
+                                                                padding-left: 10px;
+                                                                width: 80%;
+                                                            }
+                                                        }
+                                                        .validation-feedback-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            padding-top: 2px;
+
+                                                            .validation-feedback-cover-item {
+                                                                width: 80%;
+                                                                margin-left: 20%;
+                                                                border-radius: 5px;
+                                                                background-color: #fff;
+
+                                                                .validation-feedback-text {
+                                                                    font-size: 0.7rem;
+                                                                    font-weight: 600;
+                                                                    color: #e04f4f;
+                                                                    text-align: center;
+                                                                    margin-block-start: 0.5em;
+                                                                    margin-block-end: 0.5em;
+                                                                }
+                                                            }
+                                                        }
+                                                        .attr-type-desc-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: flex-end;
+    
+                                                            .attr-type-desc-cover-item {
+                                                                width: 80%;
+    
+                                                                .attr-type-desc {
+                                                                    font-size: 0.8rem;
+                                                                    font-weight: 600;
+                                                                    color: #fff;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .btn-cover-flex {
+                                            width: 100%;
+                                            display: flex;
+                                            justify-content: center;
+    
+                                            .btn-inner-cover-item {
+                                                width: 84% !important;
+                                                display: flex;
+                                                justify-content: space-between;
+                                                padding-top: 20px;
+                                                margin-left: 18% !important;
+    
+                                                .btn-cover-item {
+                                                    width: 50%;
+    
+                                                    &:first-child {
+                                                        padding-right: 5px;
+                                                    }
+                                                    &:last-child {
+                                                        padding-left: 5px;
+                                                    }
+    
+                                                    .product-add-btn {
+                                                        width: 100%;
+                                                        height: 35px;
+                                                        border: none;
+                                                        border-radius: 5px;
+                                                        background-color: #fff;
+                                                        color: #e04f4f;
+                                                        transition: 0.2s ease-in-out;
+    
+                                                        &:hover {
+                                                            background-color: rgba(254, 254, 254, 0.9);
+                                                            cursor: pointer;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
