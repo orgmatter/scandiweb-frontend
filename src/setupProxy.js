@@ -5,7 +5,7 @@ const proxy = {
 }
 module.exports = function(app) {
   app.use(
-    '/api/v1/products',
+    ['/api/v1/products', '/api/v1/product', '/api/v1/product/validate'],
     createProxyMiddleware(proxy)
   );
 };
