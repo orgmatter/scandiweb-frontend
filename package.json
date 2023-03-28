@@ -30,6 +30,7 @@
       "react-app/jest"
     ]
   },
+  "proxy": "https://scandiweb-product-api.herokuapp.com",
   "browserslist": {
     "production": [
       ">0.2%",
