@@ -18,7 +18,8 @@ export const listProductAction = () => dispatch => {
 
     fetch(uri, {
         method: method,
-        headers: headers
+        headers: headers,
+        credentials: true
     })
     .then(res => res.json())
     .then(resp => {
