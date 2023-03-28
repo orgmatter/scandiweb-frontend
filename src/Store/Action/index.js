@@ -12,7 +12,7 @@ export const listProductAction = () => dispatch => {
         status: "start"
     })
 
-    const uri = `${routes.listProducts.uri}`;
+    const uri = `${host}${routes.listProducts.uri}`;
     const method = routes.listProducts.method;
     const headers = routes.listProducts.headers;
 
@@ -47,7 +47,7 @@ export const addProductAction = (prodData) => dispatch => {
         status: "start"
     })
 
-    const uri = `${routes.addProduct.uri}`;
+    const uri = `${host}${routes.addProduct.uri}`;
     const method = routes.addProduct.method;
     const headers = routes.addProduct.headers;
 
@@ -81,7 +81,7 @@ export const deleteProductAction = (params) => dispatch => {
         status: "start"
     })
 
-    const uri = `${routes.deleteProducts.uri}`;
+    const uri = `${host}${routes.deleteProducts.uri}`;
     const method = routes.deleteProducts.method;
     const headers = routes.deleteProducts.headers;
 
@@ -116,7 +116,7 @@ export const validateSkuFieldAction = (params) => dispatch => {
 
     const { field, value } = params;
 
-    const uri = `${routes.validateProduct.uri}`;
+    const uri = `${host}${routes.validateProduct.uri}`;
     const uriWithParams = `${uri}?field=${field}&value=${value}`;
     const method = routes.validateProduct.method;
     const headers = routes.validateProduct.headers;
