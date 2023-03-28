@@ -16,7 +16,7 @@ export const listProductAction = () => dispatch => {
     const method = routes.listProducts.method;
     const headers = routes.listProducts.headers;
 
-    fetch(uri, {
+    fetch('https://scandiweb-proxy.herokuapp.com/status', {
         method: method,
         headers: headers,
         credentials: true
