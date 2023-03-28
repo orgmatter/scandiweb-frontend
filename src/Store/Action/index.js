@@ -19,7 +19,6 @@ export const listProductAction = () => dispatch => {
     fetch('https://scandiweb-proxy.herokuapp.com/status', {
         method: method,
         headers: headers,
-        credentials: true
     })
     .then(res => res.json())
     .then(resp => {
