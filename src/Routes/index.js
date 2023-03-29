@@ -3,7 +3,7 @@ import ProductList from "../Pages/ProductList";
 
 export const Routes = [
     {
-        url: "/product-list",
+        url: "/",
         component: (props) => <ProductList {...props} />
     },
     {

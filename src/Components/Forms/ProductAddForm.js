@@ -183,7 +183,7 @@ function ProductAddForm(props) {
 
     const handleCancel = (e) => {
         e.preventDefault();
-        window.location = "/product-list";
+        window.location = "/";
     }
 
 
@@ -191,7 +191,7 @@ function ProductAddForm(props) {
     useEffect(() => {
 
         if(addProdState.status === 'success') {
-            window.location = "/product-list";
+            window.location = "/";
         }
 
     }, [addProdState.status])

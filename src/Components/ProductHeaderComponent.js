@@ -41,14 +41,14 @@ function ProductHeaderComponent(props) {
 
         if(deleteProdState.status === "success") {
 
-            window.location = "/product-list";
+            window.location = "/";
         }
 
     }, [deleteProdState.status])
 
     switch(locPathname) {
 
-        case "/product-list":
+        case "/":
             return (
                 <div className="product-header-cover-flex">
                     <div className="product-header-cover-item">
