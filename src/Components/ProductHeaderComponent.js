@@ -60,6 +60,7 @@ function ProductHeaderComponent(props) {
                                 <button 
                                     className="action-type-btn"
                                     type="button"
+                                    value="ADD"
                                     onClick={(e) => handleClickAction(e, "add-product")}
                                 >ADD</button>
                             </div>
@@ -67,6 +68,7 @@ function ProductHeaderComponent(props) {
                                 <button 
                                     className="action-type-btn"
                                     type="button"
+                                    value="MASS DELETE"
                                     onClick={(e) => handleClickAction(e, "mass-delete")}
                                 >MASS DELETE</button>
                             </div>
