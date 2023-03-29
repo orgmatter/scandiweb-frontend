@@ -195,8 +195,6 @@ function ProductAddForm(props) {
         }
 
     }, [addProdState.status])
-
-    console.log("validate field state: ", validateSkuFieldState)
     
     return (
         <div className="product-add-form-cover-flex">
