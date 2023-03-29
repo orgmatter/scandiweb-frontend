@@ -18,11 +18,12 @@ export const listProductAction = () => dispatch => {
 
     fetch(uri, {
         method: method,
-        headers: headers
+        headers: headers,
     })
+    .then(res => res.json())
     .then(resp => {
         const { data } = resp;
-        console.log('resp: ', resp)
+        console.log("resp: ", resp);
         dispatch({
             type: LIST_PRODUCTS_TYPES.LIST_PRODUCTS_SUCCESS,
             payload: data,
