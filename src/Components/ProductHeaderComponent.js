@@ -58,17 +58,17 @@ function ProductHeaderComponent(props) {
                         <div className="action-cover-flex">
                             <div className="action-cover-item">
                                 <button 
+                                    id="add"
                                     className="action-type-btn"
                                     type="button"
-                                    value="ADD"
                                     onClick={(e) => handleClickAction(e, "add-product")}
                                 >ADD</button>
                             </div>
                             <div className="action-cover-item">
                                 <button 
+                                    id="mass-delete"
                                     className="action-type-btn"
                                     type="button"
-                                    value="MASS DELETE"
                                     onClick={(e) => handleClickAction(e, "mass-delete")}
                                 >MASS DELETE</button>
                             </div>
