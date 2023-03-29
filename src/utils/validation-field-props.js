@@ -1,7 +1,7 @@
 export const validationFieldProps = {
     sku: {
         dataType: "string",
-        length: 8,
+        length: 10,
         isUnique: true,
     },
     name: {

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { validationFieldProps } from "../../../utils/validation-field-props";
 
 export default function SkuFieldValidation(props) {
 
@@ -9,6 +10,8 @@ export default function SkuFieldValidation(props) {
         validateSkuFieldMethod 
     } = props;
 
+    const { sku } = validationFieldProps;
+
     const [inputElem, setInputElem] = useState({value: null})
 
     useEffect(() => {
@@ -17,7 +20,7 @@ export default function SkuFieldValidation(props) {
 
             setInputElem({value: event.target.value});
 
-            if(event.target.value.length === 8) {
+            if(event.target.value.length === sku.length) {
 
                 const params = {
                     field: "sku",
@@ -34,18 +37,18 @@ export default function SkuFieldValidation(props) {
         <div className="validation-feedback-cover-flex">
             <div className="validation-feedback-cover-item" id="validation-feedback-cover">
                 {
-                    productSku.length > 10 && 
-                    <p className="validation-feedback-text">The SKU number should not be more than 10 characters long</p>
+                    productSku.length > sku.length && 
+                    <p className="validation-feedback-text">The SKU number should not be more than {sku.length} characters long</p>
                 }
                 {
-                    productSku.length < 10 && ("")
+                    productSku.length < sku.length && ("")
                 }
                 {
                     validateSkuFieldState.isUnique && ("")
                 }
                 {
                     inputElem.value !== null && 
-                    inputElem.value.length === 10 && 
+                    inputElem.value.length === sku.length && 
                     validateSkuFieldState.isUnique === false && 
                     <p className="validation-feedback-text">This SKU number already exist!</p>
                 }
