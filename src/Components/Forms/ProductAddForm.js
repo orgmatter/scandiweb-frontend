@@ -199,7 +199,7 @@ function ProductAddForm(props) {
     return (
         <div className="product-add-form-cover-flex">
             <div className="product-add-form-cover-item">
-                <form className="form-cover" id="product-form" name="product-add-submit-form" onSubmit={handleSubmit}>
+                <form className="form-cover" id="product_form" name="product-add-submit-form" onSubmit={handleSubmit}>
                     <div className="form-field-cover-flex">
                         <div className="form-field-cover-item">
                             <div className="input-field-content-cover-flex">
@@ -208,7 +208,7 @@ function ProductAddForm(props) {
                                         <label htmlFor="sku">SKU:</label>
                                         <input 
                                             className="product-add-input"
-                                            id="skuNo"
+                                            id="sku"
                                             type="text"
                                             name="productSku"
                                             value={inputVal.productSku}
@@ -219,7 +219,7 @@ function ProductAddForm(props) {
                                     </div>
                                     <SkuFieldValidation 
                                         productSku={inputVal.productSku}
-                                        inputId="skuNo"
+                                        inputId="sku"
                                         validateSkuFieldState={validateSkuFieldState}
                                         validateSkuFieldMethod={validateSkuFieldMethod}
                                     />
