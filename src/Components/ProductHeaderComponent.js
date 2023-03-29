@@ -18,7 +18,7 @@ function ProductHeaderComponent(props) {
 
         e.preventDefault();
 
-        if(actionType === "product-add") {
+        if(actionType === "add-product") {
             window.location = "/product-add";
             
         }else if(actionType === "mass-delete") {
@@ -57,22 +57,18 @@ function ProductHeaderComponent(props) {
                     <div className="product-header-cover-item">
                         <div className="action-cover-flex">
                             <div className="action-cover-item">
-                                <select 
-                                    className="action-type-select"
-                                    name="actionType"
-                                    onChange={handleSelectChange}
-                                    defaultValue="null"
-                                >
-                                    <option value="null">Select action</option>
-                                    <option value="product-add">Add Product</option>
-                                    <option value="mass-delete">Mass Delete</option>
-                                </select>
+                                <button 
+                                    className="action-type-btn"
+                                    type="button"
+                                    onClick={(e) => handleClickAction(e, "add-product")}
+                                >ADD</button>
                             </div>
                             <div className="action-cover-item">
-                                <ProductListActionBtn 
-                                    actionType={selectVal.actionType} 
-                                    handleClickAction={handleClickAction}
-                                />
+                                <button 
+                                    className="action-type-btn"
+                                    type="button"
+                                    onClick={(e) => handleClickAction(e, "mass-delete")}
+                                >MASS DELETE</button>
                             </div>
                         </div>
                     </div>

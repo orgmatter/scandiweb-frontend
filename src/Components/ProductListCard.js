@@ -40,7 +40,7 @@ export default function ProductListCard(props) {
                 </div>
             </div>
             <input
-                className={`delete-checkbox ${actionType && actionType === 'mass-delete'? "show-chkbox": "hide-chkbox"}`}
+                className="delete-checkbox"
                 id={`chk-${product.id}`}
                 name={`chk${product.id}`}
                 type="checkbox"
