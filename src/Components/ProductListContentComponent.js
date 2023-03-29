@@ -46,7 +46,7 @@ export default function ProductListContentComponent(props) {
                                         className="add-btn"
                                         type="button"
                                         onClick={handleClick}
-                                    >+ Add</button>
+                                    >ADD</button>
                                 </div>
                             </div>
                         </div>
