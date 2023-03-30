@@ -5,6 +5,7 @@ import PriceFieldValidation from './Validations/PriceFieldValidation';
 import AttributeTypeForm from './AttributeTypeForm';
 import SaveProductBtn from './SaveProductBtn';
 import { validateSkuFieldAction } from "../../Store/Action";
+import { validationFieldProps } from '../../utils/validation-field-props';
 import { connect } from 'react-redux';
 
 function ProductAddForm(props) {
@@ -35,6 +36,9 @@ function ProductAddForm(props) {
         width: {isWidthValid: null, attrWidth: ""},
         length: {isLengthValid: null, attrLength: ""}
     }
+
+    const { currency } = validationFieldProps.price;
+    const { attributes } = validationFieldProps;
 
     const [inputVal, setInputVal] = useState(inputValObj);
     const [productFieldState, setProductFieldState] = useState(productFieldObj);
@@ -237,7 +241,7 @@ function ProductAddForm(props) {
                                         />
                                     </div>
                                     <div className="input-cover">
-                                        <label htmlFor="price">Price:</label>
+                                        <label htmlFor="price">Price ({currency}):</label>
                                         <input 
                                             className="product-add-input"
                                             id="price"
@@ -281,6 +285,7 @@ function ProductAddForm(props) {
                                 handleInputChange={handleInputChange} 
                                 inputVal={inputVal}
                                 productFieldState={productFieldState}
+                                attributes={attributes}
                             />
                         </div>
                     </div>

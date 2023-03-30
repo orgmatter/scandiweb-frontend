@@ -8,7 +8,13 @@ import LengthFieldValidation from "./Validations/LengthFieldValidation";
 
 export default function AttributeTypeForm(props) {
 
-    const { productType, handleInputChange, inputVal, productFieldState } = props;
+    const { 
+        productType, 
+        handleInputChange, 
+        inputVal, 
+        productFieldState,
+        attributes 
+    } = props;
 
     const productInfoObj = formHelpers(productType);
 
@@ -20,7 +26,7 @@ export default function AttributeTypeForm(props) {
                     <div className="attr-type-form-cover-item">
                         <div className="attr-type-input-cover-item">
                             {
-                                productInfoObj && <label htmlFor="size">{productInfoObj.productAttributes.attribute[0]}:</label>
+                                productInfoObj && <label htmlFor="size">{productInfoObj.productAttributes.attribute[0]} ({attributes.dvd.size.format}):</label>
                             }
                             <input 
                                 className="product-attr-input"
@@ -52,7 +58,7 @@ export default function AttributeTypeForm(props) {
                     <div className="attr-type-form-cover-item">
                         <div className="attr-type-input-cover-item">
                             {
-                                productInfoObj && <label htmlFor="weight">{productInfoObj.productAttributes.attribute[0]}:</label>
+                                productInfoObj && <label htmlFor="weight">{productInfoObj.productAttributes.attribute[0]} ({attributes.book.weight.format}):</label>
                             }
                             <input 
                                 className="product-attr-input"
