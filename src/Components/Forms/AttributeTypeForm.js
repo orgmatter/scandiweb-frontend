@@ -58,7 +58,7 @@ export default function AttributeTypeForm(props) {
                     <div className="attr-type-form-cover-item">
                         <div className="attr-type-input-cover-item">
                             {
-                                productInfoObj && <label htmlFor="weight">{productInfoObj.productAttributes.attribute[0]} ({attributes.book.weight.format}):</label>
+                                productInfoObj && <label htmlFor="weight">{productInfoObj.productAttributes.attribute[0]}:</label>
                             }
                             <input 
                                 className="product-attr-input"

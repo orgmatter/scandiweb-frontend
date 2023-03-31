@@ -75,6 +75,18 @@
                                                                 padding-left: 10px;
                                                                 width: 80%;
                                                             }
+
+                                                            &:nth-child(4) {
+
+                                                                label {
+                                                                    font-size: 1rem !important;
+                                                                    color: #fff;
+                                                                    margin-left: -10px !important;
+                                                                }
+                                                                .product-add-input {
+                                                                    width: 80%;
+                                                                }
+                                                            }
                                                         }
                                                         .validation-feedback-cover-flex {
                                                             width: 100%;
@@ -153,7 +165,7 @@
                                                             align-items: center;
     
                                                             label {
-                                                                font-size: 1.2rem;
+                                                                font-size: 1rem;
                                                                 color: #fff;
                                                             }
     
@@ -162,7 +174,7 @@
                                                                 border: none;
                                                                 border-radius: 5px;
                                                                 padding-left: 10px;
-                                                                width: 80%;
+                                                                width: 78%;
                                                             }
                                                         }
                                                         .validation-feedback-cover-flex {
