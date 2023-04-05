@@ -278,7 +278,7 @@ function ProductAddForm(props) {
                                         style={{display: "none"}}
                                     >
                                         <div className="empty-input-feedback-cover-item">
-                                            The <strong>SKU</strong> field cannot be empty
+                                            Please, submit required data
                                         </div>
                                     </div>
                                     <SkuFieldValidation 
@@ -305,7 +305,7 @@ function ProductAddForm(props) {
                                         style={{display: "none"}}
                                     >
                                         <div className="empty-input-feedback-cover-item">
-                                            The <strong>Name</strong> field cannot be empty
+                                            Please, submit required data
                                         </div>
                                     </div>
                                     <div className="input-cover">
@@ -326,7 +326,7 @@ function ProductAddForm(props) {
                                         style={{display: "none"}}
                                     >
                                         <div className="empty-input-feedback-cover-item">
-                                            The <strong>Price</strong> field cannot be empty
+                                            Please, submit required data
                                         </div>
                                     </div>
                                     <PriceFieldValidation 

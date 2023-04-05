@@ -43,7 +43,7 @@ export default function AttributeTypeForm(props) {
                             style={{display: "none"}}
                         >
                             <div className="empty-input-feedback-cover-item">
-                                The <strong>Size</strong> field cannot be empty
+                                Please, submit required data
                             </div>
                         </div>
                         <SizeFieldValidation 
@@ -83,7 +83,7 @@ export default function AttributeTypeForm(props) {
                             style={{display: "none"}}
                         >
                             <div className="empty-input-feedback-cover-item">
-                                The <strong>Weight</strong> field cannot be empty
+                                Please, submit required data
                             </div>
                         </div>
                         <WeightFieldValidation 
@@ -123,7 +123,7 @@ export default function AttributeTypeForm(props) {
                             style={{display: "none"}}
                         >
                             <div className="empty-input-feedback-cover-item">
-                                The <strong>Height</strong> field cannot be empty
+                                Please, submit required data
                             </div>
                         </div>
                         <HeightFieldValidation 
@@ -149,7 +149,7 @@ export default function AttributeTypeForm(props) {
                             style={{display: "none"}}
                         >
                             <div className="empty-input-feedback-cover-item">
-                                The <strong>Width</strong> field cannot be empty
+                                Please, submit required data
                             </div>
                         </div>
                         <WidthFieldValidation 
@@ -175,7 +175,7 @@ export default function AttributeTypeForm(props) {
                             style={{display: "none"}}
                         >
                             <div className="empty-input-feedback-cover-item">
-                                The <strong>Length</strong> field cannot be empty
+                                Please, submit required data
                             </div>
                         </div>
                         <LengthFieldValidation 
