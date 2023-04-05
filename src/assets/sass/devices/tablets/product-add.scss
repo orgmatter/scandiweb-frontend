@@ -77,6 +77,39 @@
                                                                 padding-left: 10px;
                                                                 width: 80%;
                                                             }
+
+                                                            &:nth-child(4) {
+
+                                                                label {
+                                                                    font-size: 0.8rem !important;
+                                                                    color: #fff;
+                                                                    margin-left: -10px !important;
+                                                                }
+                                                                .product-add-input {
+                                                                    width: 80%;
+                                                                }
+                                                            }
+                                                        }
+                                                        .empty-input-feedback-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            padding-top: 2px;
+                                                            margin-top: -4%;
+
+                                                            .empty-input-feedback-cover-item {
+                                                                width: 80%;
+                                                                margin-left: 20%;
+                                                                border-radius: 3px;
+                                                                background-color: #fff;
+
+                                                                font-size: 0.7rem;
+                                                                font-weight: 600;
+                                                                color: #e04f4f;
+                                                                text-align: center;
+                                                                margin-block-start: 0.5em;
+                                                                margin-block-end: 0.5em;
+                                                            }
                                                         }
                                                         .validation-feedback-cover-flex {
                                                             width: 100%;
@@ -155,16 +188,35 @@
                                                             align-items: center;
     
                                                             label {
-                                                                font-size: 1rem !important;
+                                                                font-size: 0.8rem !important;
                                                                 color: #fff;
                                                             }
-    
                                                             .product-attr-input {
                                                                 height: 30px;
                                                                 border: none;
                                                                 border-radius: 5px;
                                                                 padding-left: 10px;
+                                                                width: 80% !important;
+                                                            }
+                                                        }
+                                                        .empty-input-feedback-cover-flex {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            padding-top: 2px;
+
+                                                            .empty-input-feedback-cover-item {
                                                                 width: 80%;
+                                                                margin-left: 20%;
+                                                                border-radius: 3px;
+                                                                background-color: #fff;
+
+                                                                font-size: 0.7rem;
+                                                                font-weight: 600;
+                                                                color: #e04f4f;
+                                                                text-align: center;
+                                                                margin-block-start: 0.5em;
+                                                                margin-block-end: 0.5em;
                                                             }
                                                         }
                                                         .validation-feedback-cover-flex {
@@ -241,6 +293,19 @@
     
                                                         &:hover {
                                                             background-color: rgba(254, 254, 254, 0.9);
+                                                            cursor: pointer;
+                                                        }
+                                                    }
+                                                    .product-add-btn-false {
+                                                        width: 100%;
+                                                        height: 35px;
+                                                        border: none;
+                                                        border-radius: 5px;
+                                                        background-color: rgba(255, 255, 255, 0.5);
+                                                        color: rgba(0,0,0,0.4) !important;
+                                                        transition: 0.2s ease-in-out;
+    
+                                                        &:hover {
                                                             cursor: pointer;
                                                         }
                                                     }

@@ -35,8 +35,16 @@ export default function AttributeTypeForm(props) {
                                 name="attrSize"
                                 value={inputVal.attrSize}
                                 onChange={handleInputChange}
-                                required
                             />
+                        </div>
+                        <div 
+                            className="empty-input-feedback-cover-flex"
+                            id="size-feedback-3"
+                            style={{display: "none"}}
+                        >
+                            <div className="empty-input-feedback-cover-item">
+                                The <strong>Size</strong> field cannot be empty
+                            </div>
                         </div>
                         <SizeFieldValidation 
                             isSizeValid={productFieldState.size.isSizeValid} 
@@ -67,8 +75,16 @@ export default function AttributeTypeForm(props) {
                                 name="attrWeight"
                                 value={inputVal.attrWeight}
                                 onChange={handleInputChange}
-                                required
                             />
+                        </div>
+                        <div 
+                            className="empty-input-feedback-cover-flex"
+                            id="weight-feedback-3"
+                            style={{display: "none"}}
+                        >
+                            <div className="empty-input-feedback-cover-item">
+                                The <strong>Weight</strong> field cannot be empty
+                            </div>
                         </div>
                         <WeightFieldValidation 
                             isWeightValid={productFieldState.weight.isWeightValid} 
@@ -99,8 +115,16 @@ export default function AttributeTypeForm(props) {
                                 name="attrHeight"
                                 value={inputVal.attrHeight}
                                 onChange={handleInputChange}
-                                required
                             />
+                        </div>
+                        <div 
+                            className="empty-input-feedback-cover-flex"
+                            id="height-feedback-3"
+                            style={{display: "none"}}
+                        >
+                            <div className="empty-input-feedback-cover-item">
+                                The <strong>Height</strong> field cannot be empty
+                            </div>
                         </div>
                         <HeightFieldValidation 
                             isHeightValid={productFieldState.height.isHeightValid} 
@@ -117,8 +141,16 @@ export default function AttributeTypeForm(props) {
                                 name="attrWidth"
                                 value={inputVal.attrWidth}
                                 onChange={handleInputChange}
-                                required
                             />
+                        </div>
+                        <div 
+                            className="empty-input-feedback-cover-flex"
+                            id="width-feedback-4"
+                            style={{display: "none"}}
+                        >
+                            <div className="empty-input-feedback-cover-item">
+                                The <strong>Width</strong> field cannot be empty
+                            </div>
                         </div>
                         <WidthFieldValidation 
                             isWidthValid={productFieldState.width.isWidthValid} 
@@ -135,8 +167,16 @@ export default function AttributeTypeForm(props) {
                                 name="attrLength"
                                 value={inputVal.attrLength}
                                 onChange={handleInputChange}
-                                required
                             />
+                        </div>
+                        <div 
+                            className="empty-input-feedback-cover-flex"
+                            id="length-feedback-5"
+                            style={{display: "none"}}
+                        >
+                            <div className="empty-input-feedback-cover-item">
+                                The <strong>Length</strong> field cannot be empty
+                            </div>
                         </div>
                         <LengthFieldValidation 
                             isLengthValid={productFieldState.length.isLengthValid} 

@@ -24,7 +24,7 @@ export const ApiEndpoints = {
             }
         },
         validateProduct: {
-            uri: "/api/v1/product/validate",
+            uri: "/api/v1/product/validate-record",
             method: "GET",
             headers: {
                 "Content-Type": "application/json"

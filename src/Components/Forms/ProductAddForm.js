@@ -47,6 +47,21 @@ function ProductAddForm(props) {
     const handleInputChange = (e) => {
         e.preventDefault();
 
+        //--> This block of code removes the 
+        //--> feeedback message when inputs are changed
+        var inputs = document.querySelectorAll("input");
+        Array.from(inputs).forEach((input, index) => {
+            
+            if(input.value !== "" || input.value.length > 0) {
+                const {id} = input;
+                var feedbackElemId = `${id}-feedback-${index}`;
+                var feedbackElem = document.querySelector(`#${feedbackElemId}`);
+                feedbackElem.style.display = "none";
+                input.attributes.required = false;
+            }
+        })
+        //--> end 
+
         setInputVal(prev => {
             return {
                 ...prev,
@@ -135,51 +150,88 @@ function ProductAddForm(props) {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+
+        //--> This code block displays the 
+        //--> feeedback message when inputs are empty
+        var inputs = document.querySelectorAll("input");
+        Array.from(inputs).forEach((input, index) => {
+            
+            if(input.value === "" || input.value.length === 0) {
+                const {id} = input;
+                var feedbackElemId = `${id}-feedback-${index}`;
+                var feedbackElem = document.querySelector(`#${feedbackElemId}`);
+                feedbackElem.style.display = "block";
+                input.attributes.required = true;
+                console.log("form attributes: ", e.target.attributes)
+
+            }else if(input.value !== "" || input.value.length > 0) {
+                const {id} = input;
+                var feedbackElemId = `${id}-feedback-${index}`;
+                var feedbackElem = document.querySelector(`#${feedbackElemId}`);
+                feedbackElem.style.display = "none";
+                input.attributes.required = false;
+            }
+        })
+        //-->end
+
         if(inputVal.productType === "Book") {
 
-            const prodData = {
-                name: inputVal.productName,
-                price: inputVal.productPrice,
-                sku: inputVal.productSku,
-                productType: inputVal.productType,
-                attributes: JSON.stringify({
-                    weight: inputVal.attrWeight
-                })
-            }
+            if(inputVal.attrWeight !== "" || inputVal.attrWeight.length > 0) {
 
-            addProduct(prodData);
+                const prodData = {
+                    name: inputVal.productName,
+                    price: inputVal.productPrice,
+                    sku: inputVal.productSku,
+                    productType: inputVal.productType,
+                    attributes: JSON.stringify({
+                        weight: inputVal.attrWeight
+                    })
+                }
+    
+                addProduct(prodData);
+            }
 
 
         }else if(inputVal.productType === "DVD") {
 
-            const prodData = {
-                name: inputVal.productName,
-                price: inputVal.productPrice,
-                sku: inputVal.productSku,
-                productType: inputVal.productType,
-                attributes: JSON.stringify({
-                    size: inputVal.attrSize
-                })
-            }
+            if(inputVal.attrSize !== "" || inputVal.attrSize.length > 0) {
 
-            addProduct(prodData);
+                const prodData = {
+                    name: inputVal.productName,
+                    price: inputVal.productPrice,
+                    sku: inputVal.productSku,
+                    productType: inputVal.productType,
+                    attributes: JSON.stringify({
+                        size: inputVal.attrSize
+                    })
+                }
+    
+                addProduct(prodData);
+            }
 
 
         }else if(inputVal.productType === "Furniture") {
 
-            const prodData = {
-                name: inputVal.productName,
-                price: inputVal.productPrice,
-                sku: inputVal.productSku,
-                productType: inputVal.productType,
-                attributes: JSON.stringify({
-                    height: inputVal.attrHeight,
-                    width: inputVal.attrWidth,
-                    length: inputVal.attrLength
-                })
-            }
+            if(
+                (inputVal.attrHeight !== "" || inputVal.attrHeight.length > 0) &&
+                (inputVal.attrWidth !== "" || inputVal.attrWidth.length > 0) &&
+                (inputVal.attrLength !== "" || inputVal.attrLength.length > 0)
+            ) {
 
-            addProduct(prodData);
+                const prodData = {
+                    name: inputVal.productName,
+                    price: inputVal.productPrice,
+                    sku: inputVal.productSku,
+                    productType: inputVal.productType,
+                    attributes: JSON.stringify({
+                        height: inputVal.attrHeight,
+                        width: inputVal.attrWidth,
+                        length: inputVal.attrLength
+                    })
+                }
+    
+                addProduct(prodData);
+            }
         }
 
         return;
@@ -218,8 +270,16 @@ function ProductAddForm(props) {
                                             value={inputVal.productSku}
                                             onChange={handleInputChange}
                                             placeholder="Enter SKU number"
-                                            required
                                         />
+                                    </div>
+                                    <div 
+                                        className="empty-input-feedback-cover-flex"
+                                        id="sku-feedback-0"
+                                        style={{display: "none"}}
+                                    >
+                                        <div className="empty-input-feedback-cover-item">
+                                            The <strong>SKU</strong> field cannot be empty
+                                        </div>
                                     </div>
                                     <SkuFieldValidation 
                                         productSku={inputVal.productSku}
@@ -237,8 +297,16 @@ function ProductAddForm(props) {
                                             value={inputVal.productName}
                                             onChange={handleInputChange}
                                             placeholder="Enter name"
-                                            required
                                         />
+                                    </div>
+                                    <div 
+                                        className="empty-input-feedback-cover-flex"
+                                        id="name-feedback-1"
+                                        style={{display: "none"}}
+                                    >
+                                        <div className="empty-input-feedback-cover-item">
+                                            The <strong>Name</strong> field cannot be empty
+                                        </div>
                                     </div>
                                     <div className="input-cover">
                                         <label htmlFor="price">Price ({currency}):</label>
@@ -250,8 +318,16 @@ function ProductAddForm(props) {
                                             value={inputVal.productPrice}
                                             onChange={handleInputChange}
                                             placeholder="Enter price"
-                                            required
                                         />
+                                    </div>
+                                    <div 
+                                        className="empty-input-feedback-cover-flex"
+                                        id="price-feedback-2"
+                                        style={{display: "none"}}
+                                    >
+                                        <div className="empty-input-feedback-cover-item">
+                                            The <strong>Price</strong> field cannot be empty
+                                        </div>
                                     </div>
                                     <PriceFieldValidation 
                                         isPriceValid={productFieldState.price.isPriceValid} 
