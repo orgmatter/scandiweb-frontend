@@ -1,4 +1,9 @@
-import { LIST_PRODUCTS_TYPES, ADD_PRODUCT_TYPES, DELETE_PRODUCTS_TYPES, VALIDATE_FIELD_TYPES } from './types';
+import { 
+    LIST_PRODUCTS_TYPES, 
+    ADD_PRODUCT_TYPES, 
+    DELETE_PRODUCTS_TYPES, 
+    VALIDATE_FIELD_TYPES 
+} from './types';
 import { ApiEndpoints } from '../../config/api-endpoints';
 
 const { host, port, routes } = ApiEndpoints
