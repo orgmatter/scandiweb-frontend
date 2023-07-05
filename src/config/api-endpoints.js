@@ -1,5 +1,5 @@
 export const ApiEndpoints = {
-    host: "https://scandiweb-product-api.herokuapp.com",
+    host: "http://3.128.255.132",
     port: "9000",
     routes: {
         listProducts: {
